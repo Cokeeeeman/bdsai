@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint src/** --fix",
     "test": "jest --coverage"
   },
   "keywords": [],
@@ -12,6 +13,8 @@
   "devDependencies": {
     "babel-jest": "^22.4.3",
     "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-node": "^6.0.1",
     "jest": "^22.4.3"
   },
   "jest": {
