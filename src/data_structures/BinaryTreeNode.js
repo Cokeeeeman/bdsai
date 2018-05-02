@@ -18,4 +18,4 @@ class BinaryTreeNode {
 	}
 }
 
-module.exports = BinaryTreeNode;
+export default BinaryTreeNode;
