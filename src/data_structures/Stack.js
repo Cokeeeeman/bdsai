@@ -1,12 +1,15 @@
 /**
- * Stack implementation using Array
+ * Stack implementation using Linked List
  */
-class Stack1 {
+import Node from './Node';
+
+class Stack {
 	/**
 	 * Initialize a stack
 	 */
 	constructor() {
-		this._array = [];
+		this._tail = null;
+		this._size = 0;
 	}
 
 	/**
@@ -15,8 +18,11 @@ class Stack1 {
 	 * @return {Number}       Size of the stack
 	 */
 	push(value) {
-		this._array.push(value);
-		return this._array.length;
+		const node = new Node(value);
+		node.next = this._tail;
+		this._tail = node;
+		this._size++;
+		return this._size;
 	}
 
 	/**
@@ -24,15 +30,13 @@ class Stack1 {
 	 * @return {*} Value on the top
 	 */
 	pop() {
-		if (this._array.length === 0) {
+		if (this._tail === null) {
 			return null;
 		} else {
-			return this._array.pop();
-			/**
-			 * Alternative: 
-			 * 	const spliced = this._array.splice(this._array.length - 1, 1);
-			 * 	return spliced[0];
-			 */
+			const node = this._tail;
+			this._tail = node.next;
+			this._size--;
+			return node.value;
 		}
 	}
 
@@ -41,8 +45,7 @@ class Stack1 {
 	 * @return {*} Value on the top
 	 */
 	peek() {
-		return this._array.length === 0 ?
-			null : this._array[this._array.length - 1];
+		return this._tail ? this._tail.value : null;
 	}
 
 	/**
@@ -50,8 +53,8 @@ class Stack1 {
 	 * @return {Number} Size
 	 */
 	getSize() {
-		return this._array.length;
+		return this._size;
 	}
 }
 
-export default Stack1;
+export default Stack;
