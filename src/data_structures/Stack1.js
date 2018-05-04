@@ -1,9 +1,12 @@
-class Stack {
+/**
+ * Stack implementation using Array
+ */
+class Stack1 {
 	/**
 	 * Initialize a stack
 	 */
 	constructor() {
-		this.array = [];
+		this._array = [];
 	}
 
 	/**
@@ -12,8 +15,8 @@ class Stack {
 	 * @return {Number}       Size of the stack
 	 */
 	push(value) {
-		this.array.push(value);
-		return this.array.length;
+		this._array.push(value);
+		return this._array.length;
 	}
 
 	/**
@@ -21,13 +24,13 @@ class Stack {
 	 * @return {*} Value on the top
 	 */
 	pop() {
-		if (this.array.length === 0) {
+		if (this._array.length === 0) {
 			return null;
 		} else {
-			return this.array.pop();
+			return this._array.pop();
 			/**
 			 * Alternative: 
-			 * 	const spliced = this.array.splice(this.array.length - 1, 1);
+			 * 	const spliced = this._array.splice(this._array.length - 1, 1);
 			 * 	return spliced[0];
 			 */
 		}
@@ -38,7 +41,17 @@ class Stack {
 	 * @return {*} Value on the top
 	 */
 	peek() {
-		return this.array.length === 0 ?
-			null : this.array[this.array.length - 1];
+		return this._array.length === 0 ?
+			null : this._array[this._array.length - 1];
+	}
+
+	/**
+	 * Get size of the stack
+	 * @return {Number} Size
+	 */
+	getSize() {
+		return this._array.length;
 	}
 }
+
+export default Stack1;
