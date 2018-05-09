@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src/** --fix",
-    "test": "jest --coverage"
+    "lint": "eslint .",
+    "test": "jest --coverage",
+    "prettier": "prettier --write 'src/**/*.js'"
   },
   "keywords": [],
   "author": "",
@@ -14,8 +15,14 @@
     "babel-jest": "^22.4.3",
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jest": "^21.15.1",
     "eslint-plugin-node": "^6.0.1",
-    "jest": "^22.4.3"
+    "eslint-plugin-prettier": "^2.6.0",
+    "jest": "^22.4.3",
+    "prettier": "1.12.1"
   },
   "jest": {
     "transform": {

@@ -4,57 +4,56 @@
 import Node from './Node';
 
 class Stack {
-	/**
-	 * Initialize a stack
-	 */
-	constructor() {
-		this._tail = null;
-		this._size = 0;
-	}
+  /**
+   * Initialize a stack
+   */
+  constructor() {
+    this.tail = null;
+    this.size = 0;
+  }
 
-	/**
-	 * Push a value to the top of the stack
-	 * @param  {*} value Value to push
-	 * @return {Number}       Size of the stack
-	 */
-	push(value) {
-		const node = new Node(value);
-		node.next = this._tail;
-		this._tail = node;
-		this._size++;
-		return this._size;
-	}
+  /**
+   * Push a value to the top of the stack
+   * @param  {*} value Value to push
+   * @return {Number}       Size of the stack
+   */
+  push(value) {
+    const node = new Node(value);
+    node.next = this.tail;
+    this.tail = node;
+    this.size += 1;
+    return this.size;
+  }
 
-	/**
-	 * Removes and returns the value on the top of the stack
-	 * @return {*} Value on the top
-	 */
-	pop() {
-		if (this._tail === null) {
-			return null;
-		} else {
-			const node = this._tail;
-			this._tail = node.next;
-			this._size--;
-			return node.value;
-		}
-	}
+  /**
+   * Removes and returns the value on the top of the stack
+   * @return {*} Value on the top
+   */
+  pop() {
+    if (this.tail === null) {
+      return null;
+    }
+    const node = this.tail;
+    this.tail = node.next;
+    this.size -= 1;
+    return node.value;
+  }
 
-	/**
-	 * Returns the value on the top of the stack
-	 * @return {*} Value on the top
-	 */
-	peek() {
-		return this._tail ? this._tail.value : null;
-	}
+  /**
+   * Returns the value on the top of the stack
+   * @return {*} Value on the top
+   */
+  peek() {
+    return this.tail ? this.tail.value : null;
+  }
 
-	/**
-	 * Get size of the stack
-	 * @return {Number} Size
-	 */
-	getSize() {
-		return this._size;
-	}
+  /**
+   * Get size of the stack
+   * @return {Number} Size
+   */
+  getSize() {
+    return this.size;
+  }
 }
 
 export default Stack;
