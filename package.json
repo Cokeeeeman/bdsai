@@ -9,9 +9,17 @@
     "test": "jest --coverage",
     "prettier": "prettier --write 'src/**/*.js'"
   },
-  "keywords": ["javascript", "data-structures", "algorithms"],
+  "keywords": [
+    "javascript",
+    "data-structures",
+    "algorithms"
+  ],
   "author": "Cokeeeeman/Ziyue Chen",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cokeeeeman/bdsai.git"
+  },
   "devDependencies": {
     "babel-jest": "^22.4.3",
     "babel-preset-env": "^1.6.1",
