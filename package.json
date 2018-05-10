@@ -1,7 +1,7 @@
 {
   "name": "bdsai",
   "version": "1.0.0",
-  "description": "",
+  "description": "Basic Data Structure & Algorithm Implementation(BDSAI)",
   "main": "index.js",
   "scripts": {
     "checkall": "npm run prettier && npm run lint && npm run test",
@@ -9,8 +9,8 @@
     "test": "jest --coverage",
     "prettier": "prettier --write 'src/**/*.js'"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["javascript", "data-structures", "algorithms"],
+  "author": "Cokeeeeman/Ziyue Chen",
   "license": "ISC",
   "devDependencies": {
     "babel-jest": "^22.4.3",
