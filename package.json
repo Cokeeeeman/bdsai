@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "checkall": "npm run prettier && npm run lint && npm run test",
     "lint": "eslint .",
     "test": "jest --coverage",
     "prettier": "prettier --write 'src/**/*.js'"
