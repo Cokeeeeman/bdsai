@@ -49,6 +49,40 @@ describe('BinaryTreeNode', () => {
     });
   });
 
+  describe('getSize()', () => {
+    test('single node', () => {
+      const node = new BinaryTreeNode(1);
+      expect(node.getSize()).toBe(1);
+    });
+
+    test('more nodes', () => {
+      const node = new BinaryTreeNode(1);
+      node.left = new BinaryTreeNode(2);
+      node.right = new BinaryTreeNode(3);
+      node.left.left = new BinaryTreeNode(4);
+      node.left.right = new BinaryTreeNode(5);
+      node.right.left = new BinaryTreeNode(6);
+      node.right.right = new BinaryTreeNode(7);
+      expect(node.getSize()).toBe(7);
+    });
+  });
+
+  describe('getHeight()', () => {
+    test('single node', () => {
+      const node = new BinaryTreeNode(1);
+      expect(node.getHeight()).toBe(0);
+    });
+
+    test('more nodes', () => {
+      const node = new BinaryTreeNode(1);
+      node.left = new BinaryTreeNode(2);
+      node.right = new BinaryTreeNode(3);
+      node.left.left = new BinaryTreeNode(4);
+      node.left.left.left = new BinaryTreeNode(5);
+      expect(node.getHeight()).toBe(3);
+    });
+  });
+
   describe('isLeaf()', () => {
     test('Single node should be a leaf', () => {
       const node = new BinaryTreeNode(1);
