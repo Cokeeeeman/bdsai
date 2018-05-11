@@ -3,10 +3,22 @@
 # Basic Data Structure & Algorithm Implementation(BDSAI)
 
 ### Data Structures
-- Binary Tree
-- Binary Search Tree
-- Stack
-- Queue
+- Linked List
+- [Stack](./src/data_structures/Stack.js)
+- [Queue](./src/data_structures/Queue.js)
+- [Binary Tree](./src/data_structures/BinaryTree.js)
+- [Binary Search Tree](./src/data_structures/BinarySearchTree.js)
+- Binary Heap
+- Trie
+- Hash Map
 
 ### Algorithms
-- Binary Serach
+#### Search
+- [Binary Serach](./src/algorithms/binarySearch.js)
+#### Sort
+- Selection Sort
+- Bubble Sort
+- Insertion Sort
+- Merge Sort
+- Quick Sort
+- Heap Sort
