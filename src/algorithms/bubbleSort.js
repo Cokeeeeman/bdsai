@@ -1,5 +1,9 @@
+import { swap } from '../utils';
 /**
- * Bubble sort
+ * Bubble sort.
+ * Iterate from left to right, compare every pair of adjacent numbers, swap if they are in wrong order.
+ * In this way, fro each iteration, the biggest number of the sub-array will be swapped to the right most
+ * position.
  * @param  {Number[]} array input
  * @return {Number[]}       sorted array
  */
@@ -8,14 +12,16 @@ const bubbleSort = array => {
     throw new Error('Missing param: array');
   }
 
-  for (let i = 0; i < array.length - 1; i++) {
-    for (let j = 0; j < array.length - i - 1; j++) {
-      if (array[i] > array[j]) {
-        const tmp = array[i];
-        array[i] = array[j];
-        array[j] = tmp;
+  const n = array.length;
+  let i = n - 1;
+
+  while (i > 0) {
+    for (let j = 0; j < n - 1; j++) {
+      if (array[j] > array[j + 1]) {
+        swap(array, j, j + 1);
       }
     }
+    i -= 1;
   }
 
   return array;

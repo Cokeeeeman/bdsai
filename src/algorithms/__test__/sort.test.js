@@ -2,6 +2,7 @@ import selectionSort from '../selectionSort';
 import bubbleSort from '../bubbleSort';
 import insertionSort from '../insertionSort';
 import mergeSort from '../mergeSort';
+import quickSort from '../quickSort';
 
 const testSorting = sorting => {
   describe(sorting.name, () => {
@@ -14,15 +15,15 @@ const testSorting = sorting => {
     });
 
     test('empty array', () => {
-      const res = selectionSort([]);
+      const res = sorting([]);
       expect(res).toEqual([]);
     });
 
     test('nonempty array', () => {
-      expect(selectionSort([54])).toEqual([54]);
-      expect(selectionSort([54, 26])).toEqual([26, 54]);
-      expect(selectionSort([54, 26, 93])).toEqual([26, 54, 93]);
-      expect(selectionSort([54, 26, 93, 17, 77, 31, 44, 55, 20])).toEqual([
+      expect(sorting([54])).toEqual([54]);
+      expect(sorting([54, 26])).toEqual([26, 54]);
+      expect(sorting([54, 26, 93])).toEqual([26, 54, 93]);
+      expect(sorting([54, 26, 93, 17, 77, 31, 44, 55, 20])).toEqual([
         17,
         20,
         26,
@@ -36,8 +37,8 @@ const testSorting = sorting => {
     });
 
     test('duplicate elements', () => {
-      expect(selectionSort([54, 26, 26])).toEqual([26, 26, 54]);
-      expect(selectionSort([54, 26, 93, 26, 93, 54])).toEqual([
+      expect(sorting([54, 26, 26])).toEqual([26, 26, 54]);
+      expect(sorting([54, 26, 93, 26, 93, 54])).toEqual([
         26,
         26,
         54,
@@ -53,3 +54,4 @@ testSorting(selectionSort);
 testSorting(bubbleSort);
 testSorting(insertionSort);
 testSorting(mergeSort);
+testSorting(quickSort);
