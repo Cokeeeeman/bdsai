@@ -16,7 +16,7 @@
 #### Search
 - [Binary Serach](./src/algorithms/binarySearch.js)
 #### Sort
-- Selection Sort
+- [Selection Sort](./src/algorithms/selectionSort.js)
 - Bubble Sort
 - Insertion Sort
 - Merge Sort
