@@ -1,4 +1,6 @@
 import selectionSort from '../selectionSort';
+import bubbleSort from '../bubbleSort';
+import insertionSort from '../insertionSort';
 
 const testSorting = sorting => {
   describe(sorting.name, () => {
@@ -47,3 +49,5 @@ const testSorting = sorting => {
 };
 
 testSorting(selectionSort);
+testSorting(bubbleSort);
+testSorting(insertionSort);
