@@ -1,6 +1,7 @@
 import selectionSort from '../selectionSort';
 import bubbleSort from '../bubbleSort';
 import insertionSort from '../insertionSort';
+import mergeSort from '../mergeSort';
 
 const testSorting = sorting => {
   describe(sorting.name, () => {
@@ -51,3 +52,4 @@ const testSorting = sorting => {
 testSorting(selectionSort);
 testSorting(bubbleSort);
 testSorting(insertionSort);
+testSorting(mergeSort);
