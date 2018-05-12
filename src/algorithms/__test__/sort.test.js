@@ -3,6 +3,7 @@ import bubbleSort from '../bubbleSort';
 import insertionSort from '../insertionSort';
 import mergeSort from '../mergeSort';
 import quickSort from '../quickSort';
+import heapSort from '../heapSort';
 
 const testSorting = sorting => {
   describe(sorting.name, () => {
@@ -55,3 +56,4 @@ testSorting(bubbleSort);
 testSorting(insertionSort);
 testSorting(mergeSort);
 testSorting(quickSort);
+testSorting(heapSort);
