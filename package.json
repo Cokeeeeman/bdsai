@@ -37,5 +37,8 @@
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     }
+  },
+  "dependencies": {
+    "debug": "^3.1.0"
   }
 }

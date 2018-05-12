@@ -21,4 +21,4 @@
 - [Insertion Sort](./src/algorithms/insertionSort.js)
 - [Merge Sort](./src/algorithms/mergeSort.js)
 - [Quick Sort](./src/algorithms/quickSort.js)
-- Heap Sort
+- [Heap Sort](./src/algorithms/heapSort.js)
