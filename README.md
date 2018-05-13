@@ -4,6 +4,7 @@
 
 ### Data Structures
 - [Singly Linked List](./src/data_structures/SinglyLinkedList.js)
+- [Doubly Linked List](./src/data_structures/DoublyLinkedList.js)
 - [Stack](./src/data_structures/Stack.js)
 - [Queue](./src/data_structures/Queue.js)
 - [Binary Tree](./src/data_structures/BinaryTree.js)
