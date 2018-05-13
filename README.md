@@ -3,12 +3,11 @@
 # Basic Data Structure & Algorithm Implementation(BDSAI)
 
 ### Data Structures
-- Linked List
+- [Singly Linked List](./src/data_structures/SinglyLinkedList.js)
 - [Stack](./src/data_structures/Stack.js)
 - [Queue](./src/data_structures/Queue.js)
 - [Binary Tree](./src/data_structures/BinaryTree.js)
 - [Binary Search Tree](./src/data_structures/BinarySearchTree.js)
-- Binary Heap
 - Trie
 - Hash Map
 
