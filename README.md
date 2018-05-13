@@ -22,3 +22,5 @@
 - [Merge Sort](./src/algorithms/mergeSort.js)
 - [Quick Sort](./src/algorithms/quickSort.js)
 - [Heap Sort](./src/algorithms/heapSort.js)
+#### Dynamic Programming
+- [Fibonacci Sequence](./src/algorithms/fibonacci.js)
