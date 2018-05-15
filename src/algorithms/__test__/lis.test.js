@@ -1,4 +1,4 @@
-import { recursive, memoization } from '../lis';
+import { recursive, bottomUp } from '../lis';
 
 const testLis = lis => {
   describe(lis.name, () => {
@@ -25,4 +25,4 @@ const testLis = lis => {
 };
 
 testLis(recursive);
-testLis(memoization);
+testLis(bottomUp);

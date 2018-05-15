@@ -43,13 +43,13 @@ export const recursive = array => {
 };
 
 /**
- * Memoization solution to get longest increasing sequence
+ * Bottom up solution to get longest increasing sequence
  * Time: O(n^2)
  * Space: O(n)
  * @param  {Number[]} array
  * @return {Number} Length of longest increasing sequence
  */
-export const memoization = array => {
+export const bottomUp = array => {
   if (!array) {
     throw new Error('Missing param: array');
   }

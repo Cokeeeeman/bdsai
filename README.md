@@ -30,3 +30,6 @@
 - [Longest Increasing Sequence](./src/algorithms/lis.js)
   - Recursive
   - Memoization
+- [Longest Common Sequence](./src/algorithms/lcs.js)
+  - Recursive
+  - Bottom-up
