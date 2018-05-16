@@ -16,6 +16,7 @@
 #### Search
 - [Binary Serach](./src/algorithms/binarySearch.js)
 - [Depth First Search](./src/algorithms/dfs.js)
+- [Breadth First Search](./src/algorithms/bfs.js)
 #### Sort
 - [Selection Sort](./src/algorithms/selectionSort.js)
 - [Bubble Sort](./src/algorithms/bubbleSort.js)

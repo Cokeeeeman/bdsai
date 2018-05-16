@@ -48,22 +48,6 @@ class Queue {
     this.size -= 1;
     return node.value;
   }
-
-  /**
-   * Returns the head of the queue
-   * @return {*} head
-   */
-  head() {
-    return this.head ? this.head.value : null;
-  }
-
-  /**
-   * Returns the tail of the queue
-   * @return {*} tail
-   */
-  tail() {
-    return this.tail ? this.tail.value : null;
-  }
 }
 
 export default Queue;
