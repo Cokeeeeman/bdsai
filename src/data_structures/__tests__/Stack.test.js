@@ -49,4 +49,13 @@ describe('Stack', () => {
     stack.push(3);
     expect(stack.getSize()).toBe(3);
   });
+
+  test('isEmpty()', () => {
+    const stack = new Stack();
+    expect(stack.isEmpty()).toBe(true);
+    stack.push(1);
+    stack.push(2);
+    stack.push(3);
+    expect(stack.isEmpty()).toBe(false);
+  });
 });

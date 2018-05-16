@@ -54,6 +54,14 @@ class Stack {
   getSize() {
     return this.size;
   }
+
+  /**
+   * Whether the stack is empty
+   * @return {Boolean} Whether empty
+   */
+  isEmpty() {
+    return this.size === 0;
+  }
 }
 
 export default Stack;
