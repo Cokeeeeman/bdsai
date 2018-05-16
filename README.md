@@ -24,12 +24,5 @@
 - [Heap Sort](./src/algorithms/heapSort.js)
 #### Dynamic Programming
 - [Fibonacci Sequence](./src/algorithms/fibonacci.js)
-  - Recursive
-  - Memoization
-  - Bottom-up
 - [Longest Increasing Sequence](./src/algorithms/lis.js)
-  - Recursive
-  - Memoization
-- [Longest Common Sequence](./src/algorithms/lcs.js)
-  - Recursive
-  - Bottom-up
+- [Longest Common Subsequence](./src/algorithms/lcs.js)
