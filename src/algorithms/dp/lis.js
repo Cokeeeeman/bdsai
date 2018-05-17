@@ -1,9 +1,9 @@
 /**
- * Naive recursive solution to get longest increasing sequence
+ * Naive recursive solution to get longest increasing subsequence
  * Time: O(exponential)
  * Space: O(1)
  * @param  {Number[]} array
- * @return {Number} Length of longest increasing sequence
+ * @return {Number} Length of longest increasing subsequence
  */
 export const recursive = array => {
   if (!array) {
@@ -43,11 +43,11 @@ export const recursive = array => {
 };
 
 /**
- * Bottom up solution to get longest increasing sequence
+ * Bottom up solution to get longest increasing subsequence
  * Time: O(n^2)
  * Space: O(n)
  * @param  {Number[]} array
- * @return {Number} Length of longest increasing sequence
+ * @return {Number} Length of longest increasing subsequence
  */
 export const bottomUp = array => {
   if (!array) {

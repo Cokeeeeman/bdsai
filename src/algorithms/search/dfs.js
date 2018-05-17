@@ -1,4 +1,4 @@
-import Stack from '../data_structures/Stack';
+import Stack from '../../data_structures/Stack';
 
 const dfs = (graph, start) => {
   if (!graph || !start || Object.keys(graph).length === 0) {

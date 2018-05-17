@@ -1,4 +1,4 @@
-import Queue from '../data_structures/Queue';
+import Queue from '../../data_structures/Queue';
 
 const bfs = (graph, start) => {
   if (!graph || !start || Object.keys(graph).length === 0) {

@@ -1,4 +1,4 @@
-import { swap } from '../utils';
+import { swap } from '../../utils';
 
 /**
  * Sift down the root node to its correct position so that the tree is heapified

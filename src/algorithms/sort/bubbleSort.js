@@ -1,4 +1,4 @@
-import { swap } from '../utils';
+import { swap } from '../../utils';
 /**
  * Bubble sort.
  * Iterate from left to right, compare every pair of adjacent numbers, swap if they are in wrong order.

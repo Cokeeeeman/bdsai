@@ -14,17 +14,17 @@
 
 ### Algorithms
 #### Search
-- [Binary Serach](./src/algorithms/binarySearch.js)
-- [Depth First Search](./src/algorithms/dfs.js)
-- [Breadth First Search](./src/algorithms/bfs.js)
+- [Binary Serach](./src/algorithms/search/binarySearch.js)
+- [Depth First Search](./src/algorithms/search/dfs.js)
+- [Breadth First Search](./src/algorithms/search/bfs.js)
 #### Sort
-- [Selection Sort](./src/algorithms/selectionSort.js)
-- [Bubble Sort](./src/algorithms/bubbleSort.js)
-- [Insertion Sort](./src/algorithms/insertionSort.js)
-- [Merge Sort](./src/algorithms/mergeSort.js)
-- [Quick Sort](./src/algorithms/quickSort.js)
-- [Heap Sort](./src/algorithms/heapSort.js)
+- [Selection Sort](./src/algorithms/sort/selectionSort.js)
+- [Bubble Sort](./src/algorithms/sort/bubbleSort.js)
+- [Insertion Sort](./src/algorithms/sort/insertionSort.js)
+- [Merge Sort](./src/algorithms/sort/mergeSort.js)
+- [Quick Sort](./src/algorithms/sort/quickSort.js)
+- [Heap Sort](./src/algorithms/sort/heapSort.js)
 #### Dynamic Programming
-- [Fibonacci Sequence](./src/algorithms/fibonacci.js)
-- [Longest Increasing Sequence](./src/algorithms/lis.js)
-- [Longest Common Subsequence](./src/algorithms/lcs.js)
+- [Fibonacci Sequence](./src/algorithms/dp/fibonacci.js)
+- [Longest Increasing Sequence](./src/dp/algorithms/lis.js)
+- [Longest Common Subsequence](./src/dp/algorithms/lcs.js)

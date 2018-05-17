@@ -1,4 +1,4 @@
-import { swap } from '../utils';
+import { swap } from '../../utils';
 
 /**
  * Find the pivot so that all numbers on the left of the pivot are smaller and all numbers on the right are bigger.
