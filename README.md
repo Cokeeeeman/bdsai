@@ -28,3 +28,6 @@
 - [Fibonacci Sequence](./src/algorithms/dp/fibonacci.js)
 - [Longest Increasing Sequence](./src/dp/algorithms/lis.js)
 - [Longest Common Subsequence](./src/dp/algorithms/lcs.js)
+- [0-1 Knapsack](./src/dp/algorithms/knapsack.js)
+#### Greedy Algorithm
+- [Activity Selection Problem](./src/algorithms/greedy/activitySelection.js)
