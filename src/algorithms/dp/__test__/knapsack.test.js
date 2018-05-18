@@ -1,4 +1,4 @@
-import recursive from '../knapsack';
+import { recursive, memoization } from '../knapsack';
 
 const testKnapsack = knapsack => {
   describe(knapsack.name, () => {
@@ -20,3 +20,4 @@ const testKnapsack = knapsack => {
 };
 
 testKnapsack(recursive);
+testKnapsack(memoization);

@@ -21,7 +21,7 @@
  * @param  {Number} n      Number of items to consider
  * @return {Number}        Maxumum value
  */
-const recursive = (weight, val, wt, n) => {
+export const recursive = (weight, val, wt, n) => {
   if (n === 0) {
     return 0;
   }
@@ -36,4 +36,36 @@ const recursive = (weight, val, wt, n) => {
   );
 };
 
-export default recursive;
+/**
+ * Memoization method. Maintain a lookup table to store the intermediate results;
+ * @param  {Number} weight Total weight of knapsack
+ * @param  {Number[]} val    Array of item values
+ * @param  {Number[]} wt     Array of item weights
+ * @param  {Number} n      Number of items to consider
+ * @return {Number}        Maxumum value
+ */
+export const memoization = (weight, val, wt, n) => {
+  const lookup = {};
+
+  const _memoization = (w, m) => {
+    const key = `${w}:${m}`;
+    if (lookup[key]) {
+      return lookup[key];
+    }
+
+    let res;
+    if (m === 0) {
+      res = 0;
+    } else if (wt[m - 1] > w) {
+      res = _memoization(w, m - 1);
+    } else {
+      res = _memoization(w - wt[m - 1], m - 1) + val[m - 1];
+    }
+
+    lookup[key] = res;
+
+    return res;
+  };
+
+  return _memoization(weight, n);
+};
