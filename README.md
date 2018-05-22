@@ -9,6 +9,7 @@
 - [Queue](./src/data_structures/Queue.js)
 - [Binary Tree](./src/data_structures/BinaryTree.js)
 - [Binary Search Tree](./src/data_structures/BinarySearchTree.js)
+- [Undirected Graph](./src/data_structures/UndirectedGraph.js)
 - Trie
 - Hash Map
 
