@@ -17,13 +17,13 @@ class UndirectedGraph {
     if (this.nodes.has(node1)) {
       this.nodes.get(node1).push(node2);
     } else {
-      this.nodes.set(node1, [ node2 ]);
+      this.nodes.set(node1, [node2]);
     }
 
     if (this.nodes.has(node2)) {
       this.nodes.get(node2).push(node1);
     } else {
-      this.nodes.set(node2, [ node1 ]);
+      this.nodes.set(node2, [node1]);
     }
   }
 
@@ -33,11 +33,11 @@ class UndirectedGraph {
    * @return {Array} neighbors of input node
    */
   getNeighbors(node) {
-    if (this.nodes.has(node)) {
-      return this.nodes.get(node);
-    } else {
+    if (!this.nodes.has(node)) {
       throw new Error(`Cannot find node ${node} in the graph`);
     }
+
+    return this.nodes.get(node);
   }
 
   /**
