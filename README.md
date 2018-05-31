@@ -11,6 +11,7 @@
 - [Binary Search Tree](./src/data_structures/BinarySearchTree.js)
 - [Undirected Graph](./src/data_structures/UndirectedGraph.js)
 - [Directed Graph](./src/data_structures/DirectedGraph.js)
+- [Weighted Undirected Graph](./src/data_structures/WeightedUndirectedGraph.js)
 - Trie
 - Hash Map
 
@@ -33,3 +34,6 @@
 - [0-1 Knapsack](./src/dp/algorithms/knapsack.js)
 #### Greedy Algorithm
 - [Activity Selection Problem](./src/algorithms/greedy/activitySelection.js)
+- [Kruskal's MST](./src/algorithms/greedy/kruskalMST.js)
+#### Other
+- [Union-Find](./src/algorithms/other/unionFind.js)
