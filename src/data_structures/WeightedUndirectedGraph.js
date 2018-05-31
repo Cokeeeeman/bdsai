@@ -12,10 +12,10 @@ class WeightedUndirectedGraph {
     };
 
     this.edges.push(edge);
-    if (this.nodes.has(src)) {
+    if (!this.nodes.has(src)) {
       this.nodes.add(src);
     }
-    if (this.nodes.has(dest)) {
+    if (!this.nodes.has(dest)) {
       this.nodes.add(dest);
     }
   }

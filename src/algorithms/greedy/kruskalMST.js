@@ -12,6 +12,9 @@ import { find, union, makeSet } from '../other/unionFind';
  * @return {Array}       Edges that forms the MST
  */
 const kruskalMST = graph => {
+  if (!graph || graph.edges.length < 1) {
+    return [];
+  }
   const numOfVertices = graph.size();
   const vertices = graph.vertices();
   const cloneEdges = graph.edges.map(e => Object.assign({}, e));
