@@ -9,4 +9,10 @@ export const union = (parent, x, y) => {
   parent[x] = y;
 };
 
-export const makeSet = vertices => vertices.map(v => v);
+export const makeSet = vertices => {
+  const set = {};
+  vertices.forEach(v => {
+    set[v] = v;
+  });
+  return set;
+};
