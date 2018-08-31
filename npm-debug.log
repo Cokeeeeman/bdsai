@@ -1,0 +1,40 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/work/.nvm/versions/node/v4.2.4/bin/node',
+1 verbose cli   '/Users/work/.nvm/versions/node/v4.2.4/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'checkall' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose run-script [ 'precheckall', 'checkall', 'postcheckall' ]
+5 info precheckall bdsai@1.0.0
+6 info checkall bdsai@1.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info bdsai@1.0.0 Failed to exec checkall script
+9 verbose stack Error: bdsai@1.0.0 checkall: `npm run prettier && npm run lint && npm run test`
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (/Users/work/.nvm/versions/node/v4.2.4/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at EventEmitter.emit (events.js:172:7)
+9 verbose stack     at ChildProcess.<anonymous> (/Users/work/.nvm/versions/node/v4.2.4/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at ChildProcess.emit (events.js:172:7)
+9 verbose stack     at maybeClose (internal/child_process.js:818:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+10 verbose pkgid bdsai@1.0.0
+11 verbose cwd /Users/work/projects/bdsai
+12 error Darwin 17.7.0
+13 error argv "/Users/work/.nvm/versions/node/v4.2.4/bin/node" "/Users/work/.nvm/versions/node/v4.2.4/bin/npm" "run" "checkall"
+14 error node v4.2.4
+15 error npm  v2.14.12
+16 error code ELIFECYCLE
+17 error bdsai@1.0.0 checkall: `npm run prettier && npm run lint && npm run test`
+17 error Exit status 1
+18 error Failed at the bdsai@1.0.0 checkall script 'npm run prettier && npm run lint && npm run test'.
+18 error This is most likely a problem with the bdsai package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     npm run prettier && npm run lint && npm run test
+18 error You can get their info via:
+18 error     npm owner ls bdsai
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]

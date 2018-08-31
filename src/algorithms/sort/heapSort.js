@@ -31,10 +31,17 @@ const siftDown = (array, start, end) => {
 };
 
 /**
- * Make a random array max heap
+ * Make a random array max heap.
+ * From the last parent of the binary tree, all the way to root
+ * Sift down for each of them to form a max heap.
  * @param  {Number[]} array
  */
 const heapify = array => {
+  /*
+    index(parent) = Math.floor((index(child) - 1) / 2)
+    index of last child is array.length - 1, so index of last parent:
+    const lastParentIndex = Math.floor((array.length - 2) / 2);
+   */
   const lastParentIndex = Math.floor((array.length - 2) / 2);
   for (let i = lastParentIndex; i >= 0; i--) {
     siftDown(array, i, array.length - 1);
@@ -43,7 +50,7 @@ const heapify = array => {
 
 /**
  * Heap sort.
- * 1. Build a map heap first, from an unsorted array(total length: n)
+ * 1. Build a max heap first, from an unsorted array(total length: n)
  * 2. Swap the first(0) with the last node(i) in the current heap, so that the biggest number of the current heap is swapped to the first position
  * of the sorted portion(that is, say if the last node's index is i, after swap, [i: n] becomes sorted portion, in ascending order).
  * 3. Sift down the top node to its correct position to rebuild the max heap. Now the last index of current heap is i - 1.
