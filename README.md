@@ -9,6 +9,7 @@
 - [Queue](./src/data_structures/Queue.js)
 - [Binary Tree](./src/data_structures/BinaryTree.js)
 - [Binary Search Tree](./src/data_structures/BinarySearchTree.js)
+- [Binary Heap](./src/data_structures/BinaryHeap.js)
 - [Undirected Graph](./src/data_structures/UndirectedGraph.js)
 - [Directed Graph](./src/data_structures/DirectedGraph.js)
 - [Weighted Undirected Graph](./src/data_structures/WeightedUndirectedGraph.js)
