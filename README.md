@@ -36,5 +36,6 @@
 #### Greedy Algorithm
 - [Activity Selection Problem](./src/algorithms/greedy/activitySelection.js)
 - [Kruskal's MST](./src/algorithms/greedy/kruskalMST.js)
+- [Dijkstra's Shortest Path](./src/algorithms/greedy/dijkstra.js)
 #### Other
 - [Union-Find](./src/algorithms/other/unionFind.js)
